@@ -1,0 +1,82 @@
+body{
+    background-color:rgb(151, 19, 192);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.box{
+    position:absolute;
+    height: 50vh;
+    width: 50vh;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* border-radius: 10%; */
+    background-color: skyblue;
+}
+
+#quotes{
+    height: 25%;
+    font-size: 20px;
+    margin-top: 30%;
+    padding: 10px;
+    /* overflow: hidden; */
+}
+
+#author{
+    height: 20%;
+    font-size: 20px;
+    margin-left: 50%;
+    margin-top: 2%;
+    /* overflow: hidden; */
+}
+
+#newquote{
+    position: absolute;
+    height: 18%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(255, 17, 69);
+    font-size: 30px;
+    border-radius: 0;
+    transition:all 0.4s ease-in-out;
+}
+
+.start-quote{
+    position: absolute;
+    left: 10%;
+    top: 25%;
+}
+
+.end-quote{
+    position: absolute;
+    left: 90%;
+    top: 55%;
+    margin-top: 2%;
+}
+
+#tweetme{
+    position: absolute;
+    top: 10%;
+    left: 80%;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    outline: none;
+    /* background-color: orange; */
+    background-image: url(./images/trwitter.jpg);
+    background-size: contain;
+    transition:all 1s ease-in-out;
+}
+
+#newquote:hover{
+    cursor: pointer;
+    background-color: green;
+}
+
+#tweetme:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
